@@ -3,12 +3,74 @@ if BOARD_ATHENA
 config ZMK_KEYBOARD_NAME
     default "Athena"
 
-if USB_DEVICE_STACK
+# ARM + SOC setup
+config SOC_SERIES_NRF52X
+    default y
+config SOC_NRF52840_QIAA
+    default y
+
+# USB + BLE
 config USB_NRFX
     default y
-endif
+config USB_DEVICE_STACK
+    default y
+config ZMK_USB
+    default y
+config ZMK_BLE
+    default y
 
-config BT_CTLR
-    default BT
+# GPIO, SPI, I2C, Pinctrl, etc.
+config PINCTRL
+    default y
+config GPIO
+    default y
+config SPI
+    default y
+
+# WS2812 underglow
+config WS2812_STRIP
+    default y
+config ZMK_RGB_UNDERGLOW
+    default y
+config LED_STRIP
+    default y
+
+# Encoder (EC11)
+config EC11
+    default y
+config EC11_TRIGGER_GLOBAL_THREAD
+    default y
+
+# Kscan
+config ZMK_KSCAN
+    default y
+config ZMK_KSCAN_DEBOUNCE_PRESS_MS
+    default 10
+config ZMK_KSCAN_DEBOUNCE_RELEASE_MS
+    default 10
+
+# Power & battery
+config ZMK_EXT_POWER
+    default y
+config ZMK_BATTERY
+    default y
+
+# Flash, NVS, UF2, etc.
+config USE_DT_CODE_PARTITION
+    default y
+config BUILD_OUTPUT_UF2
+    default y
+config NVS
+    default y
+config SETTINGS_NVS
+    default y
+
+# Idle & sleep timing
+config ZMK_IDLE_TIMEOUT
+    default 120000
+config ZMK_SLEEP
+    default y
+config ZMK_IDLE_SLEEP_TIMEOUT
+    default 600000
 
 endif # BOARD_ATHENA
