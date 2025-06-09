@@ -22,11 +22,11 @@
             // ------------------------------------------------------------------------------------------------------------------------
 
             bindings = <
-&gresc    &rgb_ug RGB_TOG      &rgb_ug RGB_BRI   &rgb_ug RGB_SPI   &kp N4    &kp N5  &kp N6   &kp N7   &kp N8    &kp N9   &kp N0    &kp MINUS &kp EQUAL &kp BSPC &kp DEL        &kp PG_UP
+&gresc    &kp 1       &kp 2   &kp 3   &kp N4    &kp N5  &kp N6   &kp N7   &kp N8    &kp N9   &kp N0    &kp MINUS &kp EQUAL &kp BSPC &kp DEL        &kp PG_UP
 &kp TAB   &kp Q      &kp W    &kp E    &kp R     &kp T   &kp Y    &kp U    &kp I     &kp O    &kp P     &kp LBKT  &kp RBKT  &kp BSLH                &kp PG_DN  
 &kp CLCK  &kp A      &kp S    &kp D    &kp F     &kp G   &kp H    &kp J    &kp K     &kp L    &kp SEMI  &kp SQT             &kp RET                 &kp DEL
 &kp LSHFT &kp BSLH   &kp Z    &kp X    &kp C     &kp V   &kp B    &kp N    &kp M     &kp COMMA &kp DOT  &kp FSLH  &kp RSHFT  &kp UP                 &mo RGB
-&kp LCTRL &mo RGB    &kp LALT          &kp PG_UP         &kp SPACE         &kp PG_DN           &kp RALT  &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT            
+&kp LCTRL &kp LALT   &mo RGB          &kp PG_UP         &kp SPACE         &kp PG_DN           &kp RALT  &kp RCTRL &kp LEFT  &kp DOWN  &kp RIGHT            
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
